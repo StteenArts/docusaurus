@@ -2,56 +2,57 @@
 sidebar_position: 3
 ---
 
-# 3 - Introducción a análisis (Agregaciones)
+# 3 - Nivel 3 (Introducción a Análisis y Agregaciones)
 
-Documents are **groups of pages** connected through:
+En esta sección comenzamos a trabajar con funciones de agregación, fundamentales para el análisis de datos en MySQL.
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+Aprenderemos a utilizar:
 
-## Create your first Doc
+- `COUNT()`
+- `AVG()`
+- `GROUP BY`
 
-Create a Markdown file at `docs/hello.md`:
+Estas herramientas permiten obtener métricas y resúmenes de información dentro de una tabla.
 
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
 ---
 
-# Hello
+## STEP 3: Introducción a Análisis (Agregaciones)
 
-This is my **first Docusaurus document**!
+### 1️⃣ Contar usuarios por `role`
+
+```sql
+SELECT role, COUNT(*) AS total_users
+FROM users
+GROUP BY role;
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+### 2️⃣ Contar usuarios por document_type
 
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
+```sql
+SELECT document_type, COUNT(*) AS total_users
+FROM users
+GROUP BY document_type;
+```
+
+### 3️⃣ Contar cuántos usuarios están desempleados
+
+```sql
+SELECT COUNT(*) AS total_users_unemployed
+FROM users
+WHERE monthly_income IS NULL;
+```
+
+### 4️⃣ Calcular el promedio general de ingresos
+
+```sql
+SELECT AVG(monthly_income) AS average_income
+FROM users;
+```
+
+### 5️⃣ Calcular el promedio de ingresos por role
+
+```sql
+SELECT role, AVG(monthly_income) AS average_income
+FROM users
+GROUP BY role;
 ```

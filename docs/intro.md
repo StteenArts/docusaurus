@@ -2,46 +2,40 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introducción
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Bienvenido a la documentación de ejercicios de **MySQL**, diseñados y guiados por el Team Leader **Robin**.
 
-## Getting Started
+Este espacio tiene como objetivo reforzar los conocimientos en bases de datos relacionales mediante la práctica directa con consultas y estructuras en MySQL. A lo largo de estos ejercicios trabajarás desde conceptos básicos hasta consultas más avanzadas, enfocadas en escenarios reales de desarrollo.
 
-Get started by **creating a new site**.
+## Objetivo
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- Comprender el funcionamiento de bases de datos relacionales.
+- Aprender a leer y gestionar una base de dato y sus tablas.
+- Dominar consultas SQL (SELECT, INSERT, UPDATE, DELETE).
+- Utilizar filtros, joins, funciones agregadas y subconsultas.
+- Mejorar la lógica aplicada a problemas de datos.
 
-### What you'll need
+## Metodología
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Cada sección incluye:
 
-## Generate a new site
+- 📌 Descripción del ejercicio  
+- 🗂️ Estructura de tablas (si aplica)  
+- 💻 Requerimientos específicos  
+- ✅ Resultado esperado  
 
-Generate a new Docusaurus site using the **classic template**.
+La intención es fomentar el análisis y la resolución de problemas antes de revisar la solución final.
 
-The classic template will automatically be added to your project after you run the command:
+## Requisitos Previos
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Para aprovechar al máximo estos ejercicios, se recomienda:
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- Conocimientos básicos de bases de datos
+- Tener instalado **MySQL** o acceso a un gestor compatible
+- Un entorno como MySQL Workbench, DBeaver o similar
+- Tener una base de datos con los valores solicitados en las consultas
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+---
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Prepárate para fortalecer tus habilidades en consultas SQL y lógica de bases de datos 🚀
