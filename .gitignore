@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+
+# Docusaurus build files long term caching
+build/
+.docusaurus/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.*.local
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript / tooling
+*.tsbuildinfo
+
+# Optional: coverage
+coverage/
+
+# Optional: local server / misc
+*.log
